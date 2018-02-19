@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Passenger List using velocity view</title>
+</head>
+<body>
+<h3> Below are the passengers details</h3>
+<table border="1" cellpadding="5" cellspacing="5">
+<tr>
+	<th>Passenger Name</th>
+	<th>Passenger Email</th>
+	<th>Flight Name</th>
+	<th>Travelling From</th>
+	<th>Destination</th>
+	<th>Date of travel</th>
+</tr>
+<tr>
+	#foreach($passenger in $ticketList)
+	<td>$passenger.passengerDetails.firstName</td>
+	<td>$passenger.passengerDetails.email</td>
+	<td>$passenger.flightDetails.flight_name</td>
+	<td>$passenger.flightDetails.from</td>
+	<td>$passenger.flightDetails.dest</td>
+	<td>$passenger.flightDetails.deptDate</td>
+	#end
+</tr>
+</table>
+<h3><a href="adminHome.htm">Go Back to Menu Page</a></h3>
+</body>
+</html>
