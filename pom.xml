@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.me</groupId>
-	<artifactId>spring1</artifactId>
+	<artifactId>spring</artifactId>
 	<name>FinalProject</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
@@ -57,6 +57,13 @@
 			<groupId>org.hibernate.common</groupId>
 			<artifactId>hibernate-commons-annotations</artifactId>
 			<version>5.0.1.Final</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations -->
+		<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-annotations</artifactId>
+    <version>3.5.6-Final</version>
 		</dependency>
 
 		<dependency>
